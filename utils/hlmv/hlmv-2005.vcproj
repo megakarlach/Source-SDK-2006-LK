@@ -84,7 +84,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="comctl32.lib winmm.lib"
+				AdditionalDependencies="comctl32.lib winmm.lib user32.lib advapi32.lib kernel32.lib $(NOINHERIT)"
 				OutputFile=".\Release/hlmv.exe"
 				Version="1.2"
 				LinkIncremental="1"
@@ -191,7 +191,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="comctl32.lib winmm.lib"
+				AdditionalDependencies="comctl32.lib winmm.lib user32.lib advapi32.lib kernel32.lib"
 				OutputFile=".\Debug/hlmv.exe"
 				Version="1.1"
 				LinkIncremental="2"

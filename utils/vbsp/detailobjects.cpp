@@ -464,7 +464,7 @@ static void AddDetailToLump( const char* pModelName, const Vector& pt, const QAn
 	if (!IsModelValid(pModelName))
 		return;
 
-	if (s_DetailObjectLump.Count() == 65535)
+	if (s_DetailObjectLump.Count() == 131070)
 	{
 		++s_nDetailOverflow;
 		return;
@@ -499,7 +499,7 @@ static void AddDetailSpriteToLump( const Vector &vecOrigin, const QAngle &vecAng
 	// Insert an element into the object dictionary if it aint there...
 	int i = s_DetailObjectLump.AddToTail( );
 
-	if (i >= 65535)
+	if (i >= 131070)
 	{
 		Error( "Error! Too many detail props emitted on this map!\n" );
 	}
